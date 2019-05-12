@@ -1,16 +1,9 @@
-exports.__esModule = true;
-var HerosComponent = /** @class */ (function () {
-    function HerosComponent() {
-        this.hero = 'Windstorm';
-        this.c = 1;
-    }
-    HerosComponent.sa = function () {
-        alert(1);
-    };
-    HerosComponent.prototype.b = function () { alert(2); };
-    HerosComponent.a = 1;
-    return HerosComponent;
+var Animal =/** @class */
+(function () {
+  function Animal(theName) {
+    this.name = theName;
+  }
+  return Animal;
 }());
-exports.HerosComponent = HerosComponent;
-var herosComponent = new HerosComponent();
-console.log(herosComponent.a);
+
+console.log(new Animal("Cat").name)

@@ -1,21 +1,23 @@
 "use strict";
-// export class Hero {
-//   id: number;
-//   name: string;
-// }
 exports.__esModule = true;
-var HerosComponent = /** @class */ (function () {
-    function HerosComponent() {
-        this.hero = 'Windstorm';
-        this.c = 1;
+var Hero = /** @class */ (function () {
+    function Hero() {
+        this.a = 1;
+        this.b = 3;
     }
-    HerosComponent.sa = function () {
-        alert(1);
+    Hero.prototype.func_a = function () {
     };
-    HerosComponent.prototype.b = function () { alert(2); };
-    HerosComponent.a = 1;
-    return HerosComponent;
+    ;
+    Hero.prototype.func_b = function () {
+    };
+    ;
+    return Hero;
 }());
-exports.HerosComponent = HerosComponent;
-var herosComponent = new HerosComponent();
-console.log(herosComponent.a);
+exports.Hero = Hero;
+var Animal = /** @class */ (function () {
+    // protect name: string;
+    function Animal(theName) {
+        this.name = theName;
+    }
+    return Animal;
+}());
